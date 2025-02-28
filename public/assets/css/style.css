@@ -1,7 +1,14 @@
 /* This is the original example. You can take all css styles from here. */
+@font-face {
+    font-family: "Awesome";
+    src: url(/public/assets/otfs/Font\ Awesome\ 6\ Brands-Regular-400.otf);
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
-    font-family: Quando;
+    /* font-family: Quando; */
+    font-family: "Awesome", sans-serif;
     font-size: 15px;
     color: #787878;
 }
@@ -60,12 +67,13 @@ label {
     width: 100%;
     margin-bottom: 5px;
 }
-input[type=text], input[type=email] {
-    font-family: Quando;
+input[type=text], input[type=email], textarea {
+    font-family: "Awesome", sans-serif;
     padding: 10px;
     display: block;
     width: calc( 100% - 24px );
     margin-bottom: 15px;
+    color: rgb(31, 31, 122);
 }
 form .flexbox {
     display: flex;
@@ -128,13 +136,41 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #84B2FF;
 }
-
-
+sup {
+    color: rgb(206, 24, 24);
+}
+input::placeholder, label::placeholder, textarea::placeholder {
+    color: #c1c4c9;
+    font-family: "Awesome", sans-serif;
+}
+.selection_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1vh 0;
+    margin-bottom: 20px;
+}
+.selection_form div {
+    display: flex;
+    gap: 1vw;
+}
+.selection_form div label, .selection_form div input {
+    margin: 0;
+}
 .container {
     width: 94%;
     margin: 0 auto;
 }
-
+.fullNameBox {
+    display: flex;
+    width: 100%;
+    gap: 1vw;
+}
+.fullNameBox div { 
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
 
 /* header and main nav */
 header {

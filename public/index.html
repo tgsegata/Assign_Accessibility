@@ -60,15 +60,55 @@
                     <div class="post-list-entry">
                         <p>Contact us to learn more!</p>
                         <form action="/" method="post">
-                            <label for="fullname">Full Name</label>
-                            <input type="text" id="fullname" name="fullname" required />
+                            <div class="fullNameBox">
+                                <div>
+                                    <label for="firstname">First name<sup>*</sup></label>
+                                    <input type="text" id="firstname" name="firstname" placeholder="First name" required />
+                                </div>
+                                <div>
+                                    <label for="lastname">Last name<sup>*</sup></label>
+                                    <input type="text" id="lastname" name="lastname" placeholder="Last name" required />
+                                </div>
+                            </div>
                             
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required />
+                            <label for="email">Email<sup>*</sup></label>
+                            <input type="email" id="email" name="email" placeholder="Email" required />
 
+                            <label for="subject">Subject<sup>*</sup></label>
+                            <input class="inputs" id="subject" type="text" placeholder="Subject" required>
+
+                            <!-- Message -->
+                            <div id="message_form">
+                                <label id="message" for="textarea">Message<sup>*</sup></label>
+                                <textarea name="" class="inputs" id="message" placeholder="Message" required></textarea>
+                            </div>
+
+                            <!-- Select form -->
+                            <fieldset class="selection_form">
+                                <!-- Choose answear option -->
+                                <legend id="legend_select">Select how you would like to be contacted:</legend>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input class="inputs" id="email" type="radio" name="contact">
+                                </div>
+                                <div>
+                                    <label for="phone_call">Phone call</label>
+                                    <input class="inputs" id="phone_call" type="radio" name="contact">
+                                </div>
+                                <div>
+                                    <label for="sms">SMS</label>
+                                    <input class="inputs" id="sms" type="radio" name="contact">
+                                </div>
+                                <div>
+                                    <label for="whatsapp">Whatsapp</label>
+                                    <input class="inputs" id="whatsapp" type="radio" name="contact">
+                                </div>
+                            </fieldset>
+
+                            <!-- Check box -->
                             <div class="flexbox">
-                                <span></span>
-                                <label class="check">Check Me (required)</label>
+                                <span id="check" role="checkbox" aria-required="true" aria-checked="false"></span>
+                                <label class="check" aria-required="true">Check Me (required)</label>
                             </div>
 
                             <input type="submit" value="Submit" />
