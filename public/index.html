@@ -79,29 +79,28 @@
 
                             <!-- Message -->
                             <div id="message_form">
-                                <label id="message" for="textarea">Message<sup>*</sup></label>
-                                <textarea name="" class="inputs" id="message" placeholder="Message" required></textarea>
+                                <label for="message">Message<sup>*</sup></label>
+                                <textarea name="Message" class="inputs" id="message" placeholder="Message" required></textarea>
                             </div>
 
                             <!-- Select form -->
                             <fieldset class="selection_form">
-                                <!-- Choose answear option -->
                                 <legend id="legend_select">Select how you would like to be contacted:</legend>
                                 <div>
-                                    <label for="email">Email</label>
-                                    <input class="inputs" id="email" type="radio" name="contact">
+                                    <input class="inputs" id="emailSelect" type="radio" name="contact">
+                                    <label for="emailSelect">Email</label>
                                 </div>
                                 <div>
-                                    <label for="phone_call">Phone call</label>
                                     <input class="inputs" id="phone_call" type="radio" name="contact">
+                                    <label for="phone_call">Phone call</label>
                                 </div>
                                 <div>
-                                    <label for="sms">SMS</label>
                                     <input class="inputs" id="sms" type="radio" name="contact">
+                                    <label for="sms">SMS</label>
                                 </div>
                                 <div>
-                                    <label for="whatsapp">Whatsapp</label>
                                     <input class="inputs" id="whatsapp" type="radio" name="contact">
+                                    <label for="whatsapp">WhatsApp</label>
                                 </div>
                             </fieldset>
 
